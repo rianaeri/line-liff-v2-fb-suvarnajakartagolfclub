@@ -99,7 +99,7 @@ function simpanData() {
 
     nama = $('#nama').val();
     tanggal = $('#tanggal').val();
-    agenda = $('#makanan').val();
+    makanan = $('#makanan').val();
 
     if (localStorage.list_data && localStorage.id_data) {
         list_data = JSON.parse(localStorage.getItem('list_data'));
@@ -138,7 +138,7 @@ function simpanEditData() {
     id_data = $('#eid_data').val();
     nama = $('#enama').val();
     tanggal = $('#etanggal').val();
-    agenda = $('#emakanan').val();
+    makanan = $('#emakanan').val();
 
     list_data.push({ 'id_data': id_data, 'nama': nama, 'tanggal': tanggal, 'makanan': makanan });
     localStorage.setItem('list_data', JSON.stringify(list_data));
